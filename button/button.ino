@@ -14,17 +14,6 @@ void setup()
   pinMode(button, INPUT);
   check_wifi();
   Serial.println("Connected to wifi");
-  
-  //設定 flag 目前的值
-  getdata(DID, AK, SID_sleep); //取值
-  int flag = (int)*value - 48;//把value的直轉換成 int flag  ASCII .10進位 -48 會等於  圖形數字0 
-  if(flag == 0){ //判斷目前的狀態  設定 LED 開關
-      flag = 1;
-      digitalWrite(LED, HIGH);
-   }else{
-      flag = 0;
-      digitalWrite(LED, LOW);
-  }
 }
 
 void loop()
