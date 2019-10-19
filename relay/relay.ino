@@ -15,8 +15,7 @@ void loop()
 {
   check_wifi();
 
-  getdata(DID, AK, SID_sleep);
-//  value = getdata(DID, AK, SID_sleep);
+  getdata(DID, AK);
   Serial.print("main value:");
   Serial.println(value);
    int A = (int)*value;
