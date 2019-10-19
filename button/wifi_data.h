@@ -1,5 +1,3 @@
-
-
 #include <HttpClient.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -22,9 +20,6 @@ const String SID_sleep = ""; //可以自己取裝置名稱 sensor id
 int status = WL_IDLE_STATUS;
 WiFiClient client;
 
-//json object
-const size_t capacity = JSON_OBJECT_SIZE(3) + JSON_ARRAY_SIZE(1) + 60;
-DynamicJsonBuffer jsonBuffer(capacity);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
