@@ -12,13 +12,13 @@ $mail = new PHPMailer;
 $mail->isSMTP(); // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
 $mail->SMTPAuth = true; // Enable SMTP authentication
-$mail->Username = 'g10206023@gmail.com'; // SMTP username
-$mail->Password = 'ji3g4284gj94ek'; // SMTP password
+$mail->Username = '帳號'; // SMTP username
+$mail->Password = '密碼'; // SMTP password
 $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to
 
-$mail->setFrom('g10206023@gmail.com', '帥ND'); //寄件的Gmail
-$mail->addAddress('chuckchen7994@gmail.com', '家人'); // 收件的信箱
+$mail->setFrom('你的mail@gmail.com', '你的名字'); //寄件的Gmail
+$mail->addAddress('對方的mail@gmail.com', '對方的名字'); // 收件的信箱
 
 // $mail->AddCC('chuck@corma.com.tw');
 
